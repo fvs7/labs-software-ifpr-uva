@@ -1,0 +1,47 @@
+# Responde automaticamente a cada pedido novo: reconhece o programa no catálogo,
+# confere sistema operacional, prazo e licença, e põe os rótulos lab/* e sw/*.
+name: Triagem automática
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  triagem:
+    if: contains(github.event.issue.labels.*.name, 'pedido')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+
+      - name: Analisar pedido
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUM: ${{ github.event.issue.number }}
+        run: |
+          gh issue view "$NUM" --repo "$GITHUB_REPOSITORY" \
+            --json number,title,body,labels,state,createdAt,url,reactionGroups > issue.json
+          python ferramentas/build.py --triagem issue.json > triagem.json
+          python -c "import json;print(json.load(open('triagem.json'))['comentario'])" > comentario.md
+          python -c "import json;print(','.join(json.load(open('triagem.json'))['rotulos']))" > rotulos.txt
+
+      - name: Comentar e rotular
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUM: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUM" --repo "$GITHUB_REPOSITORY" --body-file comentario.md
+          ROTULOS=$(cat rotulos.txt)
+          for r in ${ROTULOS//,/ }; do
+            # cria o rótulo sw/* na hora se ainda não existir
+            gh label create "$r" --repo "$GITHUB_REPOSITORY" --color ededed 2>/dev/null || true
+          done
+          [ -n "$ROTULOS" ] && gh issue edit "$NUM" --repo "$GITHUB_REPOSITORY" --add-label "$ROTULOS"
+          true
