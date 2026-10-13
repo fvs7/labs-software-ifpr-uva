@@ -1,0 +1,14 @@
+id: mysql-workbench
+nome: MySQL Workbench
+categoria: Banco de dados
+descricao: Modelagem e consultas em MySQL.
+site: https://dev.mysql.com/downloads/workbench/
+licenca: livre
+tamanho_mb: 260
+so: [windows, linux]
+instalacao:
+  windows: { winget: Oracle.MySQLWorkbench }
+  linux: { snap: mysql-workbench-community }
+depende: []
+instalado_em: []
+aliases: [workbench, mysql]

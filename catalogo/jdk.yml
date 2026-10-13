@@ -1,0 +1,14 @@
+id: jdk
+nome: Java JDK 21 (Temurin)
+categoria: Base
+descricao: Ambiente Java usado por vários programas do catálogo.
+site: https://adoptium.net
+licenca: livre
+tamanho_mb: 330
+so: [windows, linux]
+instalacao:
+  windows: { winget: EclipseAdoptium.Temurin.21.JDK }
+  linux: { apt: openjdk-21-jdk }
+depende: []
+instalado_em: [lab1]
+aliases: [java, jdk, jre, openjdk, temurin]

@@ -1,0 +1,14 @@
+id: gimp
+nome: GIMP
+categoria: Design
+descricao: Edição de imagens.
+site: https://www.gimp.org
+licenca: livre
+tamanho_mb: 900
+so: [windows, linux]
+instalacao:
+  windows: { winget: GIMP.GIMP.3 }   # conferir o id com: winget search gimp
+  linux: { apt: gimp }
+depende: []
+instalado_em: [lab4]
+aliases: []

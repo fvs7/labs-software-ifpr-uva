@@ -1,0 +1,14 @@
+id: nodejs
+nome: Node.js LTS
+categoria: Programação
+descricao: JavaScript fora do navegador, com npm.
+site: https://nodejs.org
+licenca: livre
+tamanho_mb: 110
+so: [windows, linux]
+instalacao:
+  windows: { winget: OpenJS.NodeJS.LTS }
+  linux: { apt: "nodejs npm" }
+depende: []
+instalado_em: []
+aliases: [node, npm, node js]

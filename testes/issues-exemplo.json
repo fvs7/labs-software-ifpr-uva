@@ -1,0 +1,194 @@
+[
+ {
+  "number": 1,
+  "title": "[Pedido] Cisco Packet Tracer",
+  "body": "### Seu nome\n\nAna Lima\n\n### Curso\n\nTécnico em Informática\n\n### Disciplina\n\nRedes de Computadores I\n\n### Turma e número de alunos\n\nINFO2 — 34 alunos\n\n### Laboratórios\n\nLaboratório 02\n\n### Programa\n\nCisco Packet Tracer\n\n### Site oficial ou link de download\n\nhttps://exemplo.org\n\n### Versão\n\n_No response_\n\n### Extensões, plugins ou bibliotecas\n\n_No response_\n\n### Licença\n\nGratuito\n\n### Se precisa de licença ou conta, como funciona?\n\n_No response_\n\n### Tamanho aproximado instalado (se souber)\n\n_No response_\n\n### Precisa de internet?\n\nSim, para login ou ativação\n\n### Os alunos precisam de permissão de administrador?\n\nNão\n\n### Requisito de hardware\n\n_No response_\n\n### Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?\n\nSim, na pasta do aluno\n\n### Data da primeira aula que usa o programa\n\n2026-08-20\n\n### Por quanto tempo?\n\nPermanente\n\n### Como saberemos que está funcionando?\n\nAbrir o programa e criar um arquivo novo.\n\n### Aceita uma alternativa livre, se houver?\n\nSim\n\n### Observações\n\n_No response_",
+  "labels": [
+   {
+    "name": "pedido"
+   },
+   {
+    "name": "status/instalado"
+   }
+  ],
+  "state": "OPEN",
+  "createdAt": "2026-08-04T12:00:00Z",
+  "url": "https://github.com/OWNER/REPO/issues/1",
+  "reactionGroups": [
+   {
+    "content": "THUMBS_UP",
+    "users": {
+     "totalCount": 0
+    }
+   }
+  ]
+ },
+ {
+  "number": 2,
+  "title": "[Pedido] NetBeans",
+  "body": "### Seu nome\n\nCarlos Pereira\n\n### Curso\n\nTécnico em Informática\n\n### Disciplina\n\nProgramação Orientada a Objetos\n\n### Turma e número de alunos\n\nINFO3 — 30 alunos\n\n### Laboratórios\n\nLaboratório 02, Laboratório 03\n\n### Programa\n\nNetBeans\n\n### Site oficial ou link de download\n\nhttps://exemplo.org\n\n### Versão\n\n_No response_\n\n### Extensões, plugins ou bibliotecas\n\n_No response_\n\n### Licença\n\nLivre / código aberto\n\n### Se precisa de licença ou conta, como funciona?\n\n_No response_\n\n### Tamanho aproximado instalado (se souber)\n\n_No response_\n\n### Precisa de internet?\n\nNão\n\n### Os alunos precisam de permissão de administrador?\n\nNão\n\n### Requisito de hardware\n\n_No response_\n\n### Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?\n\nSim, na pasta do aluno\n\n### Data da primeira aula que usa o programa\n\n2026-10-20\n\n### Por quanto tempo?\n\nPermanente\n\n### Como saberemos que está funcionando?\n\nAbrir o programa e criar um arquivo novo.\n\n### Aceita uma alternativa livre, se houver?\n\nSim\n\n### Observações\n\n_No response_",
+  "labels": [
+   {
+    "name": "pedido"
+   },
+   {
+    "name": "status/aprovado"
+   }
+  ],
+  "state": "OPEN",
+  "createdAt": "2026-09-15T12:00:00Z",
+  "url": "https://github.com/OWNER/REPO/issues/2",
+  "reactionGroups": [
+   {
+    "content": "THUMBS_UP",
+    "users": {
+     "totalCount": 0
+    }
+   }
+  ]
+ },
+ {
+  "number": 3,
+  "title": "[Pedido] GeoGebra",
+  "body": "### Seu nome\n\nPaula Reis\n\n### Curso\n\nLicenciatura em Matemática\n\n### Disciplina\n\nGeometria Analítica\n\n### Turma e número de alunos\n\nMAT1 — 28 alunos\n\n### Laboratórios\n\nLaboratório 04\n\n### Programa\n\nGeoGebra\n\n### Site oficial ou link de download\n\nhttps://exemplo.org\n\n### Versão\n\n_No response_\n\n### Extensões, plugins ou bibliotecas\n\n_No response_\n\n### Licença\n\nLivre / código aberto\n\n### Se precisa de licença ou conta, como funciona?\n\n_No response_\n\n### Tamanho aproximado instalado (se souber)\n\n_No response_\n\n### Precisa de internet?\n\nNão\n\n### Os alunos precisam de permissão de administrador?\n\nNão\n\n### Requisito de hardware\n\n_No response_\n\n### Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?\n\nSim, na pasta do aluno\n\n### Data da primeira aula que usa o programa\n\n2026-10-27\n\n### Por quanto tempo?\n\nSó este semestre\n\n### Como saberemos que está funcionando?\n\nAbrir o programa e criar um arquivo novo.\n\n### Aceita uma alternativa livre, se houver?\n\nSim\n\n### Observações\n\n_No response_",
+  "labels": [
+   {
+    "name": "pedido"
+   },
+   {
+    "name": "status/agendado"
+   }
+  ],
+  "state": "OPEN",
+  "createdAt": "2026-09-22T12:00:00Z",
+  "url": "https://github.com/OWNER/REPO/issues/3",
+  "reactionGroups": [
+   {
+    "content": "THUMBS_UP",
+    "users": {
+     "totalCount": 0
+    }
+   }
+  ]
+ },
+ {
+  "number": 4,
+  "title": "[Pedido] Arduino IDE",
+  "body": "### Seu nome\n\nRafael Costa\n\n### Curso\n\nTécnico em Informática\n\n### Disciplina\n\nSistemas Embarcados\n\n### Turma e número de alunos\n\nINFO3 — 30 alunos\n\n### Laboratórios\n\nLaboratório 01\n\n### Programa\n\nArduino IDE\n\n### Site oficial ou link de download\n\nhttps://exemplo.org\n\n### Versão\n\n_No response_\n\n### Extensões, plugins ou bibliotecas\n\nESP32 (Espressif)\nBiblioteca DHT sensor\n\n### Licença\n\nLivre / código aberto\n\n### Se precisa de licença ou conta, como funciona?\n\n_No response_\n\n### Tamanho aproximado instalado (se souber)\n\n_No response_\n\n### Precisa de internet?\n\nSim, o programa funciona online\n\n### Os alunos precisam de permissão de administrador?\n\nSim\n\n### Requisito de hardware\n\nPorta USB livre para a placa\n\n### Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?\n\nSim, na pasta do aluno\n\n### Data da primeira aula que usa o programa\n\n2026-10-21\n\n### Por quanto tempo?\n\nPermanente\n\n### Como saberemos que está funcionando?\n\nAbrir o programa e criar um arquivo novo.\n\n### Aceita uma alternativa livre, se houver?\n\nSim\n\n### Observações\n\n_No response_",
+  "labels": [
+   {
+    "name": "pedido"
+   },
+   {
+    "name": "status/em-analise"
+   }
+  ],
+  "state": "OPEN",
+  "createdAt": "2026-10-06T12:00:00Z",
+  "url": "https://github.com/OWNER/REPO/issues/4",
+  "reactionGroups": [
+   {
+    "content": "THUMBS_UP",
+    "users": {
+     "totalCount": 0
+    }
+   }
+  ]
+ },
+ {
+  "number": 5,
+  "title": "[Pedido] Blender 4.2",
+  "body": "### Seu nome\n\nJuliana Alves\n\n### Curso\n\nTécnico em Informática\n\n### Disciplina\n\nComputação Gráfica\n\n### Turma e número de alunos\n\nINFO4 — 25 alunos\n\n### Laboratórios\n\nLaboratório 03\n\n### Programa\n\nBlender 4.2\n\n### Site oficial ou link de download\n\nhttps://exemplo.org\n\n### Versão\n\n_No response_\n\n### Extensões, plugins ou bibliotecas\n\n_No response_\n\n### Licença\n\nLivre / código aberto\n\n### Se precisa de licença ou conta, como funciona?\n\n_No response_\n\n### Tamanho aproximado instalado (se souber)\n\n_No response_\n\n### Precisa de internet?\n\nNão\n\n### Os alunos precisam de permissão de administrador?\n\nNão\n\n### Requisito de hardware\n\nPlaca de vídeo com OpenGL 4.3\n\n### Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?\n\nSim, na pasta do aluno\n\n### Data da primeira aula que usa o programa\n\n2026-11-10\n\n### Por quanto tempo?\n\nPermanente\n\n### Como saberemos que está funcionando?\n\nAbrir o programa e criar um arquivo novo.\n\n### Aceita uma alternativa livre, se houver?\n\nSim\n\n### Observações\n\n_No response_",
+  "labels": [
+   {
+    "name": "pedido"
+   },
+   {
+    "name": "status/novo"
+   }
+  ],
+  "state": "OPEN",
+  "createdAt": "2026-10-11T12:00:00Z",
+  "url": "https://github.com/OWNER/REPO/issues/5",
+  "reactionGroups": [
+   {
+    "content": "THUMBS_UP",
+    "users": {
+     "totalCount": 3
+    }
+   }
+  ]
+ },
+ {
+  "number": 6,
+  "title": "[Pedido] AutoCAD 2026",
+  "body": "### Seu nome\n\nMarcos Dias\n\n### Curso\n\nTécnico em Edificações\n\n### Disciplina\n\nDesenho Técnico Assistido\n\n### Turma e número de alunos\n\nEDI2 — 32 alunos\n\n### Laboratórios\n\nLaboratório 01, Laboratório 03\n\n### Programa\n\nAutoCAD 2026\n\n### Site oficial ou link de download\n\nhttps://exemplo.org\n\n### Versão\n\n_No response_\n\n### Extensões, plugins ou bibliotecas\n\n_No response_\n\n### Licença\n\nLicença educacional gratuita\n\n### Se precisa de licença ou conta, como funciona?\n\nCada aluno cria conta educacional Autodesk.\n\n### Tamanho aproximado instalado (se souber)\n\n12 GB\n\n### Precisa de internet?\n\nSim, para login ou ativação\n\n### Os alunos precisam de permissão de administrador?\n\nNão\n\n### Requisito de hardware\n\n_No response_\n\n### Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?\n\nSim, na pasta do aluno\n\n### Data da primeira aula que usa o programa\n\n2026-11-03\n\n### Por quanto tempo?\n\nPermanente\n\n### Como saberemos que está funcionando?\n\nAbrir o programa e criar um arquivo novo.\n\n### Aceita uma alternativa livre, se houver?\n\nSim\n\n### Observações\n\n_No response_",
+  "labels": [
+   {
+    "name": "pedido"
+   },
+   {
+    "name": "status/aguardando-licenca"
+   }
+  ],
+  "state": "OPEN",
+  "createdAt": "2026-09-30T12:00:00Z",
+  "url": "https://github.com/OWNER/REPO/issues/6",
+  "reactionGroups": [
+   {
+    "content": "THUMBS_UP",
+    "users": {
+     "totalCount": 0
+    }
+   }
+  ]
+ },
+ {
+  "number": 7,
+  "title": "[Pedido] MySQL Workbench",
+  "body": "### Seu nome\n\nFernanda Rocha\n\n### Curso\n\nTécnico em Informática\n\n### Disciplina\n\nBanco de Dados\n\n### Turma e número de alunos\n\nINFO2 — 34 alunos\n\n### Laboratórios\n\nLaboratório 01, Laboratório 04\n\n### Programa\n\nMySQL Workbench\n\n### Site oficial ou link de download\n\nhttps://exemplo.org\n\n### Versão\n\n_No response_\n\n### Extensões, plugins ou bibliotecas\n\n_No response_\n\n### Licença\n\nLivre / código aberto\n\n### Se precisa de licença ou conta, como funciona?\n\n_No response_\n\n### Tamanho aproximado instalado (se souber)\n\n_No response_\n\n### Precisa de internet?\n\nNão\n\n### Os alunos precisam de permissão de administrador?\n\nNão\n\n### Requisito de hardware\n\n_No response_\n\n### Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?\n\nSim, na pasta do aluno\n\n### Data da primeira aula que usa o programa\n\n2026-10-19\n\n### Por quanto tempo?\n\nPermanente\n\n### Como saberemos que está funcionando?\n\nAbrir o programa e criar um arquivo novo.\n\n### Aceita uma alternativa livre, se houver?\n\nSim\n\n### Observações\n\n_No response_",
+  "labels": [
+   {
+    "name": "pedido"
+   },
+   {
+    "name": "status/novo"
+   }
+  ],
+  "state": "OPEN",
+  "createdAt": "2026-10-12T12:00:00Z",
+  "url": "https://github.com/OWNER/REPO/issues/7",
+  "reactionGroups": [
+   {
+    "content": "THUMBS_UP",
+    "users": {
+     "totalCount": 0
+    }
+   }
+  ]
+ },
+ {
+  "number": 8,
+  "title": "[Pedido] Photoshop",
+  "body": "### Seu nome\n\nPedro Santos\n\n### Curso\n\nTécnico em Informática\n\n### Disciplina\n\nProjeto Integrador\n\n### Turma e número de alunos\n\nINFO4 — 25 alunos\n\n### Laboratórios\n\nLaboratório 02\n\n### Programa\n\nPhotoshop\n\n### Site oficial ou link de download\n\nhttps://exemplo.org\n\n### Versão\n\n_No response_\n\n### Extensões, plugins ou bibliotecas\n\n_No response_\n\n### Licença\n\nPago — ainda não temos licença\n\n### Se precisa de licença ou conta, como funciona?\n\n_No response_\n\n### Tamanho aproximado instalado (se souber)\n\n5 GB\n\n### Precisa de internet?\n\nNão\n\n### Os alunos precisam de permissão de administrador?\n\nNão\n\n### Requisito de hardware\n\n_No response_\n\n### Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?\n\nSim, na pasta do aluno\n\n### Data da primeira aula que usa o programa\n\n2026-09-10\n\n### Por quanto tempo?\n\nPermanente\n\n### Como saberemos que está funcionando?\n\nAbrir o programa e criar um arquivo novo.\n\n### Aceita uma alternativa livre, se houver?\n\nNão, precisa ser este\n\n### Observações\n\n_No response_",
+  "labels": [
+   {
+    "name": "pedido"
+   },
+   {
+    "name": "status/recusado"
+   }
+  ],
+  "state": "CLOSED",
+  "createdAt": "2026-09-01T12:00:00Z",
+  "url": "https://github.com/OWNER/REPO/issues/8",
+  "reactionGroups": [
+   {
+    "content": "THUMBS_UP",
+    "users": {
+     "totalCount": 0
+    }
+   }
+  ]
+ }
+]

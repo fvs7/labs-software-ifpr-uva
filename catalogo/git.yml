@@ -1,0 +1,14 @@
+id: git
+nome: Git
+categoria: Programação
+descricao: Controle de versão, com Git Bash no Windows.
+site: https://git-scm.com
+licenca: livre
+tamanho_mb: 350
+so: [windows, linux]
+instalacao:
+  windows: { winget: Git.Git }
+  linux: { apt: git }
+depende: []
+instalado_em: [lab1, lab2, lab3, lab4]
+aliases: [git bash]

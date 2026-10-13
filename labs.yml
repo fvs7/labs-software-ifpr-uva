@@ -1,0 +1,75 @@
+# Configuração dos laboratórios — fonte da previsão de disco.
+# Valores marcados com CONFERIR são estimativas iniciais: ajuste com o que
+# a máquina-modelo de cada laboratório mostra de verdade.
+
+campus: IFPR — Campus União da Vitória
+
+# Prazo mínimo entre o pedido e a primeira aula que usa o programa.
+# A instalação entra na próxima regravação da imagem (FOG), não no mesmo dia.
+prazo_minimo_dias: 15
+
+# Pedidos marcados como "só este semestre" vencem nesta data e entram em revisão.
+semestre:
+  nome: 2026/2
+  fim: 2026-12-18
+
+# Faixas da barra de disco (fração do disco total).
+alerta_disco:
+  atencao: 0.75
+  critico: 0.90
+
+# Mostrar o nome de quem pediu no painel público? (o pedido continua na issue)
+mostrar_solicitante: false
+
+laboratorios:
+  - id: lab1
+    nome: Laboratório 01
+    so: windows          # windows | linux
+    so_descricao: Windows 11
+    maquinas: 36
+    disco_gb: 256        # CONFERIR
+    reservado_gb:        # o que já está ocupado antes de qualquer programa pedido
+      sistema: 45
+      atualizacoes: 15
+      perfis_usuarios: 30
+    margem_seguranca: 0.10
+    imagem_fog: lab01-2026-2
+
+  - id: lab2
+    nome: Laboratório 02
+    so: windows
+    so_descricao: Windows 11
+    maquinas: 34
+    disco_gb: 256        # CONFERIR
+    reservado_gb:
+      sistema: 45
+      atualizacoes: 15
+      perfis_usuarios: 30
+    margem_seguranca: 0.10
+    imagem_fog: lab02-2026-2
+
+  - id: lab3
+    nome: Laboratório 03
+    so: windows
+    so_descricao: Windows 11 (piloto de login por domínio)
+    maquinas: 40
+    disco_gb: 256        # CONFERIR
+    reservado_gb:
+      sistema: 45
+      atualizacoes: 15
+      perfis_usuarios: 40   # perfis de domínio crescem mais
+    margem_seguranca: 0.10
+    imagem_fog: lab03-2026-2
+
+  - id: lab4
+    nome: Laboratório 04
+    so: linux            # CONFERIR qual laboratório é o Linux
+    so_descricao: Ubuntu 24.04 LTS
+    maquinas: 16
+    disco_gb: 240        # CONFERIR
+    reservado_gb:
+      sistema: 20
+      atualizacoes: 8
+      perfis_usuarios: 20
+    margem_seguranca: 0.10
+    imagem_fog: lab04-2026-2

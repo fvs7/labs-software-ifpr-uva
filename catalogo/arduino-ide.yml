@@ -1,0 +1,15 @@
+id: arduino-ide
+nome: Arduino IDE 2
+categoria: Eletrônica
+descricao: Programação de placas Arduino e compatíveis.
+site: https://www.arduino.cc/en/software
+licenca: livre
+tamanho_mb: 650
+so: [windows, linux]
+instalacao:
+  windows: { winget: ArduinoSA.IDE.stable }
+  linux: { flatpak: cc.arduino.IDE2 }
+depende: []
+instalado_em: []
+aliases: [arduino]
+observacoes: Placas extras (ESP32, etc.) baixam mais 300-800 MB por núcleo — pedir no campo de plugins.

@@ -1,0 +1,15 @@
+id: blender
+nome: Blender
+categoria: Design
+descricao: Modelagem e animação 3D.
+site: https://www.blender.org
+licenca: livre
+tamanho_mb: 1100
+so: [windows, linux]
+instalacao:
+  windows: { winget: BlenderFoundation.Blender }
+  linux: { snap: "blender --classic" }
+depende: []
+instalado_em: []
+aliases: []
+observacoes: Exige placa de vídeo com OpenGL 4.3. Conferir nas máquinas antes de aprovar.

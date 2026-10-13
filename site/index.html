@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software nos Laboratórios</title>
+<meta name="description" content="Programas instalados, pedidos em andamento e espaço em disco dos laboratórios do IFPR União da Vitória.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='1' y='5' width='14' height='6' rx='1' fill='%2323854a'/><rect x='1' y='5' width='9' height='6' rx='1' fill='%2316302a'/></svg>">
+</head>
+<body>
+<header class="topo">
+  <div class="topo-texto">
+    <p class="campus" id="campus">IFPR — Campus União da Vitória</p>
+    <h1>Software nos laboratórios</h1>
+    <p class="lead">Veja o que já está instalado em cada laboratório, acompanhe os pedidos e quanto espaço ainda cabe nas máquinas.</p>
+  </div>
+  <a class="botao-pedir" id="link-pedir" href="#">Pedir um programa</a>
+</header>
+
+<main>
+  <section class="busca" aria-labelledby="busca-titulo">
+    <h2 id="busca-titulo" class="visualmente-oculto">Procurar um programa</h2>
+    <label for="campo-busca" class="busca-rotulo">Antes de pedir, procure aqui — talvez ele já esteja instalado ou alguém já pediu.</label>
+    <input id="campo-busca" type="search" placeholder="Ex.: Python, GeoGebra, Packet Tracer" autocomplete="off">
+    <ul id="resultado-busca" class="resultado-busca" aria-live="polite"></ul>
+  </section>
+
+  <section aria-labelledby="labs-titulo">
+    <div class="secao-cabeca">
+      <h2 id="labs-titulo">Laboratórios</h2>
+      <ul class="legenda" aria-label="Legenda da barra de disco">
+        <li><span class="amostra s-sistema"></span>Sistema e perfis</li>
+        <li><span class="amostra s-instalado"></span>Instalado</li>
+        <li><span class="amostra s-aprovado"></span>Aprovado, a instalar</li>
+        <li><span class="amostra s-pendente"></span>Em análise</li>
+        <li><span class="amostra s-margem"></span>Margem de segurança</li>
+      </ul>
+    </div>
+    <div id="labs" class="labs"></div>
+  </section>
+
+  <section aria-labelledby="pedidos-titulo">
+    <div class="secao-cabeca">
+      <h2 id="pedidos-titulo">Pedidos</h2>
+      <div class="filtros" role="group" aria-label="Filtrar pedidos">
+        <select id="filtro-lab" aria-label="Laboratório"><option value="">Todos os laboratórios</option></select>
+        <select id="filtro-status" aria-label="Situação">
+          <option value="abertos">Em andamento</option>
+          <option value="instalado">Instalados</option>
+          <option value="fechados">Não aprovados ou removidos</option>
+          <option value="">Todos</option>
+        </select>
+      </div>
+    </div>
+    <ol id="pedidos" class="pedidos"></ol>
+  </section>
+
+  <section id="como-funciona" aria-labelledby="como-titulo" class="como">
+    <h2 id="como-titulo">Como funciona um pedido</h2>
+    <ol class="etapas">
+      <li><strong>Você preenche o formulário</strong> no GitHub, dizendo programa, laboratório, disciplina e a data da primeira aula. Leva uns 5 minutos.</li>
+      <li><strong>O sistema confere na hora</strong> se o programa já existe, se roda no sistema do laboratório e se o prazo é suficiente, e responde no próprio pedido.</li>
+      <li><strong>A TI analisa</strong> licença, espaço em disco e segurança. Programas pagos só entram com licença para todas as máquinas.</li>
+      <li><strong>A instalação entra na próxima atualização</strong> da imagem do laboratório. Por isso o prazo mínimo é de <span id="prazo">15</span> dias.</li>
+      <li><strong>Você testa antes da aula</strong> o que descreveu no pedido e confirma no próprio pedido que está funcionando.</li>
+    </ol>
+    <p id="ajuda" class="nota">Programa já instalado travando ou sem abrir não é pedido novo: abra um chamado no suporte de TI.</p>
+  </section>
+</main>
+
+<footer class="rodape">
+  <p>Atualizado em <span id="gerado-em">—</span>. Os tamanhos são por máquina, medidos na máquina-modelo de cada laboratório.</p>
+  <p><a id="link-repo" href="#">Ver o repositório</a></p>
+</footer>
+
+<template id="tpl-lab">
+  <article class="lab">
+    <header class="lab-cabeca">
+      <h3 class="lab-nome"></h3>
+      <p class="lab-info"></p>
+    </header>
+    <div class="disco">
+      <div class="disco-numeros">
+        <span class="disco-livre"></span>
+        <span class="disco-total"></span>
+      </div>
+      <div class="barra" role="img"></div>
+      <p class="disco-aviso"></p>
+    </div>
+    <details class="lab-programas">
+      <summary></summary>
+      <ul class="lista-programas"></ul>
+    </details>
+    <a class="lab-script" download></a>
+  </article>
+</template>
+
+<script src="app.js" defer></script>
+</body>
+</html>

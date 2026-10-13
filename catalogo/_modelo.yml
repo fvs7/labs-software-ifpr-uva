@@ -1,0 +1,17 @@
+# Modelo de entrada do catálogo. Copie para <id>.yml (id em minúsculas, sem espaço).
+# O catálogo é a fonte da verdade: tamanho e comando de instalação vêm daqui,
+# não do pedido do professor.
+id: exemplo
+nome: Nome do programa
+categoria: Programação     # Programação | Escritório | Matemática | Redes | Eletrônica | Design | Banco de dados | Base
+descricao: Uma frase dizendo para que serve, para o professor reconhecer.
+site: https://exemplo.org
+licenca: livre            # livre | gratuita | educacional | paga
+tamanho_mb: 500           # medido na máquina-modelo depois de instalado
+so: [windows, linux]
+instalacao:
+  windows: { winget: Fornecedor.Programa }      # ou { choco: pacote } ou { manual: "instrução" }
+  linux: { apt: pacote }                         # ou { flatpak: id } ou { snap: "nome --classic" } ou { manual: "instrução" }
+depende: []               # ids de outros itens do catálogo (runtime compartilhado conta uma vez só)
+instalado_em: []          # labs onde já está na imagem atual: [lab1, lab2]
+aliases: []               # outros nomes que o professor pode digitar

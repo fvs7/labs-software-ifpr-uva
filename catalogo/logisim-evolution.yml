@@ -1,0 +1,14 @@
+id: logisim-evolution
+nome: Logisim-evolution
+categoria: Eletrônica
+descricao: Simulação de circuitos digitais.
+site: https://github.com/logisim-evolution/logisim-evolution
+licenca: livre
+tamanho_mb: 120
+so: [windows, linux]
+instalacao:
+  windows: { manual: "Baixar o .msi do GitHub (releases) e instalar com msiexec /qn" }
+  linux: { flatpak: com.github.reds.LogisimEvolution }
+depende: [jdk]
+instalado_em: []
+aliases: [logisim]

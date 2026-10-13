@@ -1,0 +1,7 @@
+_site/
+issues.json
+issue.json
+triagem.json
+comentario.md
+rotulos.txt
+__pycache__/

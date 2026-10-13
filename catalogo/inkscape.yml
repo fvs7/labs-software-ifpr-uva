@@ -1,0 +1,14 @@
+id: inkscape
+nome: Inkscape
+categoria: Design
+descricao: Desenho vetorial.
+site: https://inkscape.org
+licenca: livre
+tamanho_mb: 550
+so: [windows, linux]
+instalacao:
+  windows: { winget: Inkscape.Inkscape }
+  linux: { apt: inkscape }
+depende: []
+instalado_em: [lab4]
+aliases: []

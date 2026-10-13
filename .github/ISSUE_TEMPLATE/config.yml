@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ver o painel dos laboratórios
+    url: https://fvs7.github.io/labs-software-ifpr-uva/
+    about: Programas instalados, pedidos em andamento e espaço em disco de cada laboratório.
+  - name: Problema em programa já instalado
+    url: https://fvs7.github.io/labs-software-ifpr-uva/#ajuda
+    about: Programa travando ou sem abrir não é pedido novo — abra chamado no suporte de TI.

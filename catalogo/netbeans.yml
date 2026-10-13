@@ -1,0 +1,14 @@
+id: netbeans
+nome: Apache NetBeans
+categoria: Programação
+descricao: IDE para Java, usada em programação orientada a objetos.
+site: https://netbeans.apache.org
+licenca: livre
+tamanho_mb: 950
+so: [windows, linux]
+instalacao:
+  windows: { winget: Apache.NetBeans }
+  linux: { snap: "netbeans --classic" }
+depende: [jdk]
+instalado_em: [lab1]
+aliases: [netbeans ide]

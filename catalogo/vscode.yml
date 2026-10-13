@@ -1,0 +1,14 @@
+id: vscode
+nome: Visual Studio Code
+categoria: Programação
+descricao: Editor de código com extensões para praticamente qualquer linguagem.
+site: https://code.visualstudio.com
+licenca: gratuita
+tamanho_mb: 420
+so: [windows, linux]
+instalacao:
+  windows: { winget: Microsoft.VisualStudioCode }
+  linux: { snap: "code --classic" }
+depende: []
+instalado_em: [lab1, lab2, lab3]
+aliases: [vs code, vscode, visual studio code]

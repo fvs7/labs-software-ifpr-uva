@@ -1,0 +1,14 @@
+id: python
+nome: Python 3.13
+categoria: Programação
+descricao: Interpretador Python com pip e IDLE.
+site: https://www.python.org
+licenca: livre
+tamanho_mb: 160
+so: [windows, linux]
+instalacao:
+  windows: { winget: Python.Python.3.13 }
+  linux: { apt: "python3 python3-pip python3-venv idle3" }
+depende: []
+instalado_em: [lab1, lab2, lab3, lab4]
+aliases: [python3, python 3, idle]

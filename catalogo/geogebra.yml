@@ -1,0 +1,14 @@
+id: geogebra
+nome: GeoGebra Clássico
+categoria: Matemática
+descricao: Geometria, álgebra e gráficos dinâmicos.
+site: https://www.geogebra.org/download
+licenca: gratuita
+tamanho_mb: 420
+so: [windows, linux]
+instalacao:
+  windows: { winget: GeoGebra.Classic }
+  linux: { flatpak: org.geogebra.GeoGebra }
+depende: []
+instalado_em: [lab3]
+aliases: [geogebra classic, geogebra 6]

@@ -1,0 +1,14 @@
+id: libreoffice
+nome: LibreOffice
+categoria: Escritório
+descricao: Editor de textos, planilhas e apresentações.
+site: https://www.libreoffice.org
+licenca: livre
+tamanho_mb: 1150
+so: [windows, linux]
+instalacao:
+  windows: { winget: TheDocumentFoundation.LibreOffice }
+  linux: { apt: "libreoffice libreoffice-l10n-pt-br" }
+depende: []
+instalado_em: [lab1, lab2, lab3, lab4]
+aliases: [libre office, writer, calc, impress]

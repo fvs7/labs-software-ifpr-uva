@@ -1,0 +1,218 @@
+name: Pedir um programa para o laboratório
+description: Solicite a instalação de um programa em um ou mais laboratórios.
+title: "[Pedido] "
+labels: ["pedido", "status/novo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de pedir, confira no **painel** se o programa já está instalado ou se outro professor já pediu — nesse caso, deixe um 👍 no pedido existente.
+
+        Os pedidos entram na próxima atualização da imagem do laboratório. Peça com **pelo menos 15 dias** de antecedência da aula.
+
+  # ---------- quem pede ----------
+  - type: input
+    id: nome
+    attributes:
+      label: Seu nome
+      description: Opcional. Este pedido é público — se preferir, deixe em branco; seu usuário do GitHub já identifica o pedido.
+      placeholder: "Ex.: Maria Souza"
+    validations:
+      required: false
+
+  - type: input
+    id: curso
+    attributes:
+      label: Curso
+      placeholder: "Ex.: Técnico em Informática Integrado"
+    validations:
+      required: true
+
+  - type: input
+    id: disciplina
+    attributes:
+      label: Disciplina
+      placeholder: "Ex.: Redes de Computadores II"
+    validations:
+      required: true
+
+  - type: input
+    id: turma
+    attributes:
+      label: Turma e número de alunos
+      placeholder: "Ex.: INFO3 — 32 alunos"
+    validations:
+      required: true
+
+  # ---------- onde ----------
+  - type: dropdown
+    id: laboratorios
+    attributes:
+      label: Laboratórios
+      description: Pode marcar mais de um. Laboratório 04 é Linux; os demais são Windows.
+      multiple: true
+      options:
+        - Laboratório 01
+        - Laboratório 02
+        - Laboratório 03
+        - Laboratório 04
+    validations:
+      required: true
+
+  # ---------- o programa ----------
+  - type: input
+    id: programa
+    attributes:
+      label: Programa
+      description: O nome como ele aparece no site oficial.
+      placeholder: "Ex.: Cisco Packet Tracer"
+    validations:
+      required: true
+
+  - type: input
+    id: site
+    attributes:
+      label: Site oficial ou link de download
+      placeholder: "https://"
+    validations:
+      required: true
+
+  - type: input
+    id: versao
+    attributes:
+      label: Versão
+      description: Deixe em branco se qualquer versão recente serve.
+      placeholder: "Ex.: 8.2.2"
+
+  - type: textarea
+    id: complementos
+    attributes:
+      label: Extensões, plugins ou bibliotecas
+      description: "Um por linha. Ex.: extensões do VS Code, pacotes do Python, placas do Arduino."
+      placeholder: |
+        ms-python.python
+        ESP32 (Arduino)
+
+  - type: dropdown
+    id: licenca
+    attributes:
+      label: Licença
+      options:
+        - Livre / código aberto
+        - Gratuito
+        - Licença educacional gratuita
+        - Pago — o campus já tem licença
+        - Pago — ainda não temos licença
+        - Não sei
+    validations:
+      required: true
+
+  - type: textarea
+    id: licenca_detalhes
+    attributes:
+      label: Se precisa de licença ou conta, como funciona?
+      description: Quem fornece a chave, quantas licenças existem, se cada aluno precisa criar conta.
+      placeholder: "Ex.: cada aluno entra com a conta da NetAcad criada na primeira aula."
+
+  - type: input
+    id: tamanho_estimado
+    attributes:
+      label: Tamanho aproximado instalado (se souber)
+      description: Só para programas fora do catálogo. A TI mede o valor real.
+      placeholder: "Ex.: 2 GB"
+
+  # ---------- como vai ser usado ----------
+  - type: dropdown
+    id: internet
+    attributes:
+      label: Precisa de internet?
+      options:
+        - Não
+        - Sim, para login ou ativação
+        - Sim, o programa funciona online
+        - Não sei
+    validations:
+      required: true
+
+  - type: dropdown
+    id: admin
+    attributes:
+      label: Os alunos precisam de permissão de administrador?
+      description: Por exemplo, para instalar extensões ou drivers durante a aula.
+      options:
+        - Não
+        - Sim
+        - Não sei
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Requisito de hardware
+      placeholder: "Ex.: placa de vídeo dedicada, webcam, porta USB para Arduino"
+
+  - type: dropdown
+    id: persistencia
+    attributes:
+      label: Os arquivos dos alunos precisam ficar salvos entre uma aula e outra?
+      options:
+        - Não, cada aula começa do zero
+        - Sim, na pasta do aluno
+        - Sim, em pendrive ou nuvem por conta do aluno
+    validations:
+      required: true
+
+  # ---------- quando ----------
+  - type: input
+    id: primeira_aula
+    attributes:
+      label: Data da primeira aula que usa o programa
+      placeholder: "AAAA-MM-DD"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: periodo
+    attributes:
+      label: Por quanto tempo?
+      options:
+        - Só este semestre
+        - Permanente
+    validations:
+      required: true
+
+  - type: textarea
+    id: teste_aceite
+    attributes:
+      label: Como saberemos que está funcionando?
+      description: O que você vai abrir ou executar no primeiro uso. Usamos isso para testar antes da aula.
+      placeholder: "Ex.: abrir o arquivo topologia.pkt e simular um ping entre dois PCs."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: alternativa
+    attributes:
+      label: Aceita uma alternativa livre, se houver?
+      options:
+        - Sim
+        - Não, precisa ser este
+        - Quero sugestões
+    validations:
+      required: true
+
+  - type: textarea
+    id: observacoes
+    attributes:
+      label: Observações
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Confirmações
+      options:
+        - label: Conferi no painel que o programa ainda não está instalado nem foi pedido.
+          required: true
+        - label: Se o programa for pago, o campus tem licença para todas as máquinas.
+          required: true

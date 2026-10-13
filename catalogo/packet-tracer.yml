@@ -1,0 +1,15 @@
+id: packet-tracer
+nome: Cisco Packet Tracer
+categoria: Redes
+descricao: Simulador de redes da Cisco Networking Academy.
+site: https://www.netacad.com/resources/lab-downloads
+licenca: gratuita
+tamanho_mb: 1050
+so: [windows, linux]
+instalacao:
+  windows: { manual: "Baixar o instalador na NetAcad (exige login) e rodar com /VERYSILENT /NORESTART" }
+  linux: { manual: "Baixar o .deb na NetAcad e instalar com apt install ./CiscoPacketTracer_*.deb" }
+depende: []
+instalado_em: [lab2]
+aliases: [packet tracer, cisco pt, pt]
+observacoes: Cada aluno precisa de conta própria na NetAcad para abrir o programa.
