@@ -1,0 +1,71 @@
+# Reconstrói o painel e os scripts de instalação sempre que um pedido muda,
+# o catálogo ou labs.yml mudam, ou uma vez por semana (para os pedidos que vencem).
+name: Atualizar painel
+
+on:
+  issues:
+    types: [opened, edited, labeled, unlabeled, closed, reopened, deleted]
+  push:
+    branches: [main]
+    paths: ["catalogo/**", "labs.yml", "site/**", "ferramentas/**"]
+  schedule:
+    - cron: "17 10 * * 1"   # segunda, 07:17 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write     # commitar os scripts gerados em gerado/
+  issues: write       # criar/atualizar os rótulos
+  pages: write
+  id-token: write
+
+concurrency:
+  group: painel
+  cancel-in-progress: true
+
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml
+
+      - name: Criar ou atualizar rótulos
+        if: github.event_name != 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash ferramentas/criar-rotulos.sh "$GITHUB_REPOSITORY"
+
+      - name: Baixar pedidos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue list --repo "$GITHUB_REPOSITORY" --label pedido --state all --limit 1000 \
+            --json number,title,body,labels,state,createdAt,updatedAt,url,reactionGroups > issues.json
+
+      - name: Montar painel e scripts
+        run: python ferramentas/build.py --issues issues.json --saida _site --repo "$GITHUB_REPOSITORY"
+
+      - name: Guardar scripts gerados no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gerado/
+          if ! git diff --cached --quiet; then
+            git commit -m "Atualiza scripts de instalação dos laboratórios"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: publicar
+        uses: actions/deploy-pages@v4
