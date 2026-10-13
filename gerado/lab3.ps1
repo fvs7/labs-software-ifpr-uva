@@ -1,5 +1,5 @@
 # Laboratório 03 — Windows 11 (piloto de login por domínio)
-# Gerado automaticamente em 2026-10-13 16:49 a partir de catalogo/ e dos pedidos aprovados.
+# Gerado automaticamente em 2026-10-13 17:03 a partir de catalogo/ e dos pedidos aprovados.
 # Não edite à mão: altere o catálogo ou o status do pedido e deixe o GitHub Actions gerar de novo.
 # Rodar como Administrador na máquina-modelo, antes de capturar a imagem no FOG.
 
@@ -14,8 +14,6 @@ $winget = @(
     @{ Id = 'Microsoft.VisualStudioCode'; Nome = 'Visual Studio Code' }
     @{ Id = 'Git.Git'; Nome = 'Git' }
     @{ Id = 'Python.Python.3.13'; Nome = 'Python 3.13' }
-    @{ Id = 'EclipseAdoptium.Temurin.21.JDK'; Nome = 'Java JDK 21 (Temurin)' }
-    @{ Id = 'Apache.NetBeans'; Nome = 'Apache NetBeans' }
 )
 foreach ($p in $winget) {
     Write-Host "==> $($p.Nome)" -ForegroundColor Cyan
