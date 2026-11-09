@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Laboratório 04 — Ubuntu 24.04 LTS
-# Gerado automaticamente em 2026-11-02 17:20 a partir de catalogo/ e dos pedidos aprovados.
+# Gerado automaticamente em 2026-11-09 17:42 a partir de catalogo/ e dos pedidos aprovados.
 # Não edite à mão. Rodar com sudo na máquina-modelo, antes de capturar a imagem no FOG.
 set -uo pipefail
 [ "$(id -u)" -eq 0 ] || { echo 'Rode com sudo.'; exit 1; }
