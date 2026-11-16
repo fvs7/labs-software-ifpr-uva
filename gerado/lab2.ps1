@@ -1,5 +1,5 @@
 # Laboratório 02 — Windows 11
-# Gerado automaticamente em 2026-11-09 17:42 a partir de catalogo/ e dos pedidos aprovados.
+# Gerado automaticamente em 2026-11-16 17:25 a partir de catalogo/ e dos pedidos aprovados.
 # Não edite à mão: altere o catálogo ou o status do pedido e deixe o GitHub Actions gerar de novo.
 # Rodar como Administrador na máquina-modelo, antes de capturar a imagem no FOG.
 
